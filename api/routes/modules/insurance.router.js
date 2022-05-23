@@ -15,13 +15,9 @@ const insuranceRoutes = {
   UPDATE: "/insurance/update/:id",
 };
 
-router.get(insuranceRoutes.GET__ALL_BY_EMAIL, getInsuranceByEmail);
-router.get(insuranceRoutes.GET_BY_CAR, getInsuranceByCar);
-router.post(insuranceRoutes.CREATE, createInsurance);
-router.put(insuranceRoutes.UPDATE, findInsurance, updateInsurance);
-
-// router.get(insuranceRoutes.GET_BY_CAR, validateToken, getInsuranceByCar);
-// router.post(insuranceRoutes.CREATE, validateToken, createInsurance);
-// router.put(insuranceRoutes.UPDATE, validateToken, findInsurance, updateInsurance);
+router.get(insuranceRoutes.GET__ALL_BY_EMAIL,validateToken, getInsuranceByEmail);
+router.get(insuranceRoutes.GET_BY_CAR,validateToken, getInsuranceByCar);
+router.post(insuranceRoutes.CREATE,validateToken, createInsurance);
+router.put(insuranceRoutes.UPDATE,validateToken, findInsurance, updateInsurance);
 
 export default router;
