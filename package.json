@@ -1,0 +1,29 @@
+{
+  "name": "seguro-vehicular-tacking-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "seguro-vehicular-tacking-api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set NODE_ENV=dev&& nodemon server.js",
+    "start": "set NODE_ENV=prod&& nodemon server.js",
+    "test": "set NODE_ENV=test&& jest",
+    "server-test": "set NODE_ENV=test&& nodemon server.js"
+  },
+  "author": "Lorena Rojas",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.10",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+    "jest": "^28.0.2"
+  }
+}
