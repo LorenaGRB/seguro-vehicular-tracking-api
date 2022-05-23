@@ -1,3 +1,3 @@
 import UserModel from "./modules/users.model.js"
-
-export { UserModel };
+import CarModel from "./modules/car.model.js"
+export { UserModel, CarModel };
