@@ -7,6 +7,8 @@ const schemaUser = {
   name: String,
   email: String,
   password: String,
+  dniImage:String,
+  dniImageId:String
 };
 
 // User model
