@@ -51,7 +51,7 @@ app.use("/api/users", userRouter);
 app.use("/api/data", carRouter);
 app.use("/api/data", insuranceRouter);
 
-const PORT = 'https://seguro-vehicular-tracking-api.herokuapp.com/';
+const PORT = process.env.PORT || 5002;
 // Launch server
 app.listen(PORT, () => {
   console.log("Iniatialized server!!");
