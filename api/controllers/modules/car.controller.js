@@ -1,13 +1,11 @@
 import { CarModel } from "../../models/index.js";
-import jwt from "jsonwebtoken";
-import bcrypt from "bcrypt";
 
 // Controller get cars by user
 export const getCarsByUser = async (req, res) => {
   try {
     const { email: email } = req.params;
     const car = await CarModel.find({ email: email });
-    res.json(car);
+    res.status(200).json(car);
   } catch (error) {
     res.status(403).json({ error });
   }

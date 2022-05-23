@@ -7,6 +7,7 @@ import { fileURLToPath } from "url";
 import {
   userRouter,
   carRouter,
+  insuranceRouter,
 } from "./api/routes/index.js";
 import "dotenv/config";
 
@@ -43,12 +44,12 @@ app.use(express.json());
 
 // Routes
 app.get("/", (request, response) => {
-  console.log(request.query)
   response.send("API SEGURO-VEHICULAR-TRACKING");
 });
 
-app.use("/api/data", carRouter);
 app.use("/api/users", userRouter);
+app.use("/api/data", carRouter);
+app.use("/api/data", insuranceRouter);
 
 const PORT = 5001;
 // Launch server
