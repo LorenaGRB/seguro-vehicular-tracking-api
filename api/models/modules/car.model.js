@@ -7,7 +7,8 @@ const schemaCars = {
     insuredAmount: Number,
     carBrand: String,
     carYear: Number,
-    onGas: Boolean
+    onGas: Boolean,
+    plate: String
   }
 }
 

@@ -3,7 +3,6 @@ import mongoose from "mongoose";
 // schema User
 const schemaUser = {
   phone:String,
-  plate:String,
   name: String,
   email: String,
   password: String,
