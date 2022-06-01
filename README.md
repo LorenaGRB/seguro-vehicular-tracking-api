@@ -3,7 +3,7 @@
 
  2-Crear un .env con variales :
   ENV_DB_CONNECTION="aqui coloca la base de datos de mongo"
-  ENV_SECRET_KEY="aquoi ingrese el secret KEY"
+  ENV_SECRET_KEY="aqui ingrese el secret KEY"
  
  3- Entrar a la carpeta donde se clono el repositorio y colocar en el terminal `npm install` para que instalen todas las dependencias.
  

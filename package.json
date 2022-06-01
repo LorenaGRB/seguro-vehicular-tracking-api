@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "set NODE_ENV=dev&& nodemon server.js",
     "start": "nodemon server.js",
-    "test": "set NODE_ENV=test&& jest",
+    "test": "jest",
     "server-test": "set NODE_ENV=test&& nodemon server.js"
   },
   "author": "Lorena Rojas",

@@ -43,7 +43,6 @@ export const findCar = async (req, res, next) => {
 export const updateCar = async (req, res) => {
   const carToUpdate = req.body;
   const { car } = req.data;
-
   try {
     CarModel.updateOne(car, carToUpdate, (error, updatedCar) => {
       if (!error) {

@@ -2,9 +2,10 @@ import { InsuranceModel } from "../../models/index.js";
 
 
 // Controller get insurances by user
-export const getInsuranceByCar= async (req, res) => {
+export const getInsuranceByCar = async (req, res) => {
   try {
     const { carId: carId } = req.params;
+    console.log(carId, req.body)
     const insurance = await InsuranceModel.find({ carId: carId });
     res.status(200).json(insurance);
   } catch (error) {
@@ -13,7 +14,7 @@ export const getInsuranceByCar= async (req, res) => {
 };
 
 // Controller get insurances by user
-export const getInsuranceByEmail= async (req, res) => {
+export const getInsuranceByEmail = async (req, res) => {
   try {
     const { email: email } = req.params;
     const insurance = await InsuranceModel.find({ email: email });

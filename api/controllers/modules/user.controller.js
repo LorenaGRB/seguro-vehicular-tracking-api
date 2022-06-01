@@ -9,6 +9,7 @@ const {
 export const createUser = async(req, res) => {
   try {
     const {  email:email } = req.body;
+    console.log(req.body)
     const exist_user = await findUserByEmail( email);
     if (exist_user) throw new Error();
 
